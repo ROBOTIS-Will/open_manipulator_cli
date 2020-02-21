@@ -10,13 +10,6 @@ def setTorque(status):
     try:
         SetTorque = rospy.ServiceProxy('/open_manipulator/set_actuator_state', SetActuatorState)
 
-        # SetJPose=SetJointPositionRequest()
-        # SetJPose.planning_group = ''
-
-        # SetJPose.joint_position.joint_name = ['gripper']
-        # SetJPose.joint_position.position = [float(gripperPos)]
-        # SetJPose.path_time = float(time)
-
         if status == "on":
             resp = SetTorque(True)
         elif status == "off":
