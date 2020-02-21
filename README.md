@@ -37,7 +37,7 @@ Gripper Position Range : -0.01 ~ 0.01
   $ rosrun open_manipulator_cli moveGripper.py 0.01 1.0
   ```
   
-## Torquen Enable / Disable
+## Torque Enable / Disable
 Turn on or off the torque of DYNAMIXEL.  
 **rosrun open_manipulator_cli setDynamixelTorque.py [on|off]**
 - Turn on DYNAMIXEL Torque
